@@ -13,12 +13,12 @@ import { GoogleAuthProvider } from "firebase/auth";
 // };
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA7WxqE2fINENgP9vkoVbBChKT5UlJ_kZI",
-  authDomain: "whatsapp-clone-bb338.firebaseapp.com",
-  projectId: "whatsapp-clone-bb338",
-  storageBucket: "whatsapp-clone-bb338.appspot.com",
-  messagingSenderId: "309734145947",
-  appId: "1:309734145947:web:95744dc597742aa69d6b3e"
+  apiKey: "AIzaSyB91Oen9vGPGMMg3AyDIXpFwfrnHCmdURs",
+  authDomain: "chatapp-marvel-avengers.firebaseapp.com",
+  projectId: "chatapp-marvel-avengers",
+  storageBucket: "chatapp-marvel-avengers.appspot.com",
+  messagingSenderId: "710290424889",
+  appId: "1:710290424889:web:0c62d61c20168ba00e39e8"
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
