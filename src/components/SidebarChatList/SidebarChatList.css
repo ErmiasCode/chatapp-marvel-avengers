@@ -1,0 +1,29 @@
+.sidebarChatList {
+  display: flex;
+  padding: 20px;
+  cursor: pointer;
+  border-bottom: 0.1px solid rgb(51, 51, 51);
+}
+
+.sidebarChatList:hover {
+  background-color: gray;
+}
+
+.sidebarChatList__info {
+  margin-left: 15px;
+}
+
+.sidebarChatList__info > h2 {
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+.sidebarChatList__info > p {
+  font-size: 14px;
+  color: gray;
+}
+
+a {
+  text-decoration: none;
+  color: #eee;
+}

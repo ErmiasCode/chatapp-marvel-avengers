@@ -1,0 +1,22 @@
+.app {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-family:sans-serif;
+  color: #eee;
+  background-color: black;
+  background-image: url("https://wallpaperaccess.com/full/45807.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.app__body {
+  display: flex;
+  height: 90vh;
+  width: 90vw;
+  border-radius: 20px;
+  background-color: #0f0f0f;
+  box-shadow: -1px 4px 100px -6px rgba(255,255, 255, 0.7);
+  overflow: hidden;
+}
