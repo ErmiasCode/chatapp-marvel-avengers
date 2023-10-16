@@ -1,22 +1,23 @@
-import { useState } from 'react'
 import './App.css'
+
 import {
   Route,
   Routes,
 } from "react-router-dom";
+
+import { useStateValue } from './config/StateProvider';
+
 import Sidebar from './components/Sidebar/Sidebar'
 import Chat from './components/Chat'
 import Login from './components/Login';
-import { useStateValue } from './config/StateProvider';
 
 function App() {
   const [{ user }, dispatch] = useStateValue();
 
-  console.log('user', user)
+  //console.log('user', user)
 
   return (
     <div className='app'>
-
       {!user ? (
         <Login />
       ) : (

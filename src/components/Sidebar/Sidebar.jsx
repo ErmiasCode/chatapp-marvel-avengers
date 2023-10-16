@@ -4,10 +4,12 @@ import "./Sidebar.css"
 import db from "../../config/firebase"
 import { collection, onSnapshot } from 'firebase/firestore';
 
+import { useStateValue } from "../../config/StateProvider";
+
 import { Avatar, IconButton } from "@mui/material"
 import { ChatBubbleTwoTone, DonutLarge, MoreVert, SearchOutlined } from "@mui/icons-material"
+
 import SidebarChatList from "../SidebarChatList"
-import { useStateValue } from "../../config/StateProvider";
 
 const Sidebar = () => {
   const [rooms, setRooms] = useState([]);

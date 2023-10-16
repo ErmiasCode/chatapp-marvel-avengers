@@ -3,12 +3,12 @@ import "./SidebarChatList.css"
 
 import { Link } from "react-router-dom"
 
-import { Avatar } from "@mui/material"
-import { collection, addDoc, onSnapshot, doc } from 'firebase/firestore';
 import db from "../../config/firebase";
+import { collection, addDoc, onSnapshot } from 'firebase/firestore';
+
+import { Avatar } from "@mui/material"
 
 const SidebarChatList = ({ id, name, profileImage, addNewChat }) => {
-  const [seed, setSeed] = useState("")
   const [messages, setMessages] = useState("")
 
   useEffect(() => {
@@ -19,11 +19,6 @@ const SidebarChatList = ({ id, name, profileImage, addNewChat }) => {
       })
     }
   }, [id])
-
-
-  useEffect(() => {
-    setSeed(Math.floor(Math.random() * 5000))
-  }, [])
 
   const createChat = () => {
     const roomName = prompt("Please enter name for chat");

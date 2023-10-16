@@ -10,13 +10,12 @@ import { Avatar, IconButton } from "@mui/material"
 import { AttachFile, InsertEmoticon, Mic, MoreVert, SearchOutlined } from "@mui/icons-material"
 import { useStateValue } from "../../config/StateProvider"
 
-const Chat = (props) => {
+const Chat = () => {
   const [input, setInput] = useState("")
   const { roomId } = useParams()
   const [roomInfo, setRoomInfo] = useState("")
   const [messages, setMessages] = useState([])
   const [{user}, dispatch] = useStateValue()
-  const [seed, setSeed] = useState("")
 
   console.log("test", roomInfo)
 
@@ -35,10 +34,6 @@ const Chat = (props) => {
   }, [roomId])
 
   console.log(messages)
-
-  useEffect(() => {
-    setSeed(Math.floor(Math.random() * 5000))
-  }, [roomId])
 
   const handleSendMessage = (e) => {
     e.preventDefault()
